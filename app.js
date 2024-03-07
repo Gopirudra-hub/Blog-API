@@ -49,7 +49,7 @@ app.use(cors({
   credentials: true
 }));
 
-app.get('/', (req, res) => {
+app.get("/", (req, res) => {
   res.send('<h1>Blog API</h1>');
 });
 
