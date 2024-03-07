@@ -42,13 +42,13 @@ app.use(mongoSanitize());
 app.use(express.json());
 app.use(cookieParser(process.env.JWT_SECRET));
 app.use(fileUpload());
-/*app.use(cors({
+app.use(cors({
   origin: 'https://front-task-five.vercel.app',
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
-}));*/
-app.use(cors());
+}));
+
 app.get("/", (req, res) => {
   res.send('<h1>Blog API</h1>');
 });
