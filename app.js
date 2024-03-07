@@ -15,12 +15,12 @@ const errorHandlerMiddleware = require("./middleware/error-handler");*/
 
 app.use(express.json());
 
-app.use(cors({
+/*app.use(cors({
    origin: 'https://front-task-five.vercel.app', 
   methods: ['GET', 'POST'], 
   allowedHeaders: ['Content-Type', 'Authorization'], 
   credentials:true
-}));
+}));*/
 app.get("/", (req, res) => {
   res.send("<h1>Hello</h1>");
 });
