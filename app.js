@@ -48,7 +48,7 @@ app.use(fileUpload());
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true
 }));*/
-
+app.use(cors());
 app.get("/", (req, res) => {
   res.send('<h1>Blog API</h1>');
 });
